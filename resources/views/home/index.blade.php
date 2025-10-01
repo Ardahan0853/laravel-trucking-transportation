@@ -246,7 +246,7 @@
                         <div class="service-media">
                             <img src="{{'img/pics/construction2.webp'}}" alt="Trucking"/>
 
-                            <a href="construction.html" class="read-more02">
+                            <a href="{{route('construction.index')}}" class="read-more02">
                                     <span>
                                         Learn More
                                         <i class="fa fa-chevron-right"></i>
@@ -270,7 +270,7 @@
                         <div class="service-media">
                             <img src="{{'img/pics/courier-delivery2.webp'}}" alt="Trucking"/>
 
-                            <a href="delivery-management.html" class="read-more02">
+                            <a href="{{route('delivery-management.index')}}" class="read-more02">
                                     <span>
                                         Learn more
                                         <i class="fa fa-chevron-right"></i>
@@ -296,7 +296,7 @@
                         <div class="service-media">
                             <img src="{{'img/pics/agriculture2.webp'}}" alt="Trucking"/>
 
-                            <a href="agriculture.html" class="read-more02">
+                            <a href="{{route('agriculture.index')}}" class="read-more02">
                                     <span>
                                         Learn more
                                         <i class="fa fa-chevron-right"></i>
@@ -320,7 +320,7 @@
                         <div class="service-media">
                             <img src="{{'img/pics/waste-management2.webp'}}" alt="Trucking"/>
 
-                            <a href="waste-management.html" class="read-more02">
+                            <a href="{{route('waste-management.index')}}" class="read-more02">
                                     <span>
                                         Learn more
                                         <i class="fa fa-chevron-right"></i>
@@ -344,7 +344,7 @@
                         <div class="service-media">
                             <img src="{{'img/pics/PASSENGER-CARD-2.webp'}}" alt="Trucking"/>
 
-                            <a href="passenger-transport.html" class="read-more02">
+                            <a href="{{route('passenger-transport.index')}}" class="read-more02">
                                     <span>
                                         Learn more
                                         <i class="fa fa-chevron-right"></i>
@@ -490,123 +490,5 @@
 @endsection
 
 @push('scripts')
-    <script>
-        /* <![CDATA[ */
-        $(document).ready(function () {
 
-            'use strict';
-
-            function equalHeight() {
-                $('.page-content.column-img-bkg *[class*="custom-col-padding"]').each(function () {
-                    var maxHeight = $(this).outerHeight();
-                    $('.page-content.column-img-bkg *[class*="img-bkg"]').height(maxHeight);
-                });
-            }
-
-            $(document).ready(equalHeight);
-            $(window).resize(equalHeight);
-
-            // MASTER SLIDER START
-            var slider = new MasterSlider();
-            slider.setup('masterslider', {
-                width: 1140, // slider standard width
-                height: 854, // slider standard height
-                space: 0,
-                speed: 50,
-                layout: "fullwidth",
-                centerControls: false,
-                loop: true,
-                autoplay: true
-                // more slider options goes here...
-                // check slider options section in documentation for more options.
-            });
-            // adds Arrows navigation control to the slider.
-            slider.control('arrows');
-
-            // CLIENTS CAROUSEL START
-            $('#client-carousel').owlCarousel({
-                items: 6,
-                loop: true,
-                margin: 30,
-                responsiveClass: true,
-                mouseDrag: true,
-                dots: false,
-                responsive: {
-                    0: {
-                        items: 2,
-                        nav: true,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 3000,
-                        autoplayHoverPause: true,
-                        responsiveClass: true
-                    },
-                    600: {
-                        items: 3,
-                        nav: true,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 3000,
-                        autoplayHoverPause: true,
-                        responsiveClass: true
-                    },
-                    1000: {
-                        items: 6,
-                        nav: true,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 3000,
-                        autoplayHoverPause: true,
-                        responsiveClass: true,
-                        mouseDrag: true
-                    }
-                }
-            });
-
-            // TESTIMONIAL CAROUSELS START
-            $('#testimonial-carousel').owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 30,
-                responsiveClass: true,
-                mouseDrag: true,
-                dots: false,
-                autoheight: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 3000,
-                        autoplayHoverPause: true,
-                        responsiveClass: true,
-                        autoHeight: true
-                    },
-                    600: {
-                        items: 1,
-                        nav: true,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 3000,
-                        autoplayHoverPause: true,
-                        responsiveClass: true,
-                        autoHeight: true
-                    },
-                    1000: {
-                        items: 1,
-                        nav: true,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 3000,
-                        autoplayHoverPause: true,
-                        responsiveClass: true,
-                        mouseDrag: true,
-                        autoHeight: true
-                    }
-                }
-            });
-        });
-        /* ]]> */
-    </script>
 @endpush

@@ -33,7 +33,7 @@
                             <!-- .navbar-header start -->
                             <div class="navbar-header">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href={{route('home.index')}}>
                                         <img src="{{asset('img/logo.webp')}}" alt="Trucking Transportation and Logistics"/>
                                     </a>
                                 </div><!-- .logo end -->
