@@ -11,7 +11,7 @@
                         </div>
 
                         <ul>
-                            <li><a href="about01.html">Truckpost Platform</a></li>
+                            <li><a href="{{route('trucking-services.index')}}">Truckpost Platform</a></li>
                             <li><a href="company-history.html">Truckpost Expert</a></li>
                             <li><a href="events.html">Truckpost Driver App</a></li>
                             <li><a href="supply-chain-management.html">Truckpost Manager App</a></li>

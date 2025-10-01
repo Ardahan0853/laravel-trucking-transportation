@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{asset('css/animate.css')}}"/><!-- animations -->
     <link rel='stylesheet' href="{{asset('owl-carousel/owl.carousel.css')}}"/><!-- Client carousel -->
     <link rel="stylesheet" href="{{asset('css/custom.css')}}"/><!-- template styles -->
-    <link rel="stylesheet" href="{{asset('css/color-blue.css')}}"/><!-- template main color -->
+    <link rel="stylesheet" href="{{asset('css/color-default.css')}}"/><!-- template main color -->
     <link rel="stylesheet" href="{{asset('css/retina.css')}}"/><!-- retina ready styles -->
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}"/><!-- responsive styles -->
 
@@ -28,6 +28,7 @@
     <!-- Font icons -->
     <link rel="stylesheet" href="{{asset('icon-fonts/font-awesome-4.3.0/css/font-awesome.min.css')}}"/>
     <!-- Fontawesome icons css -->
+    @stack('styles') {{-- sayfa bazlı css eklemek için --}}
 </head>
 <body style="position: relative;">
 {{-- header --}}
@@ -39,7 +40,11 @@
 
 
 {{-- footer --}}
-@include('partials.trucking-services-footer')
+@if(request()->is('fullscreen-minimal*'))
+
+@else
+    @include('partials.trucking-services-footer')
+@endif
 
 <script src="{{asset('js/jquery-2.1.4.min.js')}}"></script><!-- jQuery library -->
 <script src="{{asset('js/bootstrap.min.js')}}"></script><!-- .bootstrap script -->
@@ -50,124 +55,128 @@
 <script src="{{asset('js/jquery.dlmenu.min.js')}}"></script><!-- for responsive menu -->
 <script src="{{asset('js/include.js')}}"></script><!-- custom js functions -->
 
-<script>
-    /* <![CDATA[ */
-    $(document).ready(function () {
-        'use strict';
+@if(request()->is('trucking-services-slider*') || request()->is('trucking-parallax-slider*') || request()->is('trucking-corporate*') || request()->is('trucking-simple-slider*') || request()->is('fullscreen-minimal*'))
+    <script></script>
+@else
+    <script>
+        /* <![CDATA[ */
+        $(document).ready(function () {
+            'use strict';
 
-        function equalHeight() {
-            $('.page-content.column-img-bkg *[class*="custom-col-padding"]').each(function () {
-                var maxHeight = $(this).outerHeight();
-                $('.page-content.column-img-bkg *[class*="img-bkg"]').height(maxHeight);
+            function equalHeight() {
+                $('.page-content.column-img-bkg *[class*="custom-col-padding"]').each(function () {
+                    var maxHeight = $(this).outerHeight();
+                    $('.page-content.column-img-bkg *[class*="img-bkg"]').height(maxHeight);
+                });
+            }
+
+            $(document).ready(equalHeight);
+            $(window).resize(equalHeight);
+
+            // MASTER SLIDER START
+            var slider = new MasterSlider();
+            slider.setup('masterslider', {
+                width: 1140, // slider standard width
+                height: 854, // slider standard height
+                space: 0,
+                speed: 50,
+                layout: "fullwidth",
+                centerControls: false,
+                loop: true,
+                autoplay: true
+                // more slider options goes here...
+                // check slider options section in documentation for more options.
             });
-        }
+            // adds Arrows navigation control to the slider.
+            slider.control('arrows');
 
-        $(document).ready(equalHeight);
-        $(window).resize(equalHeight);
-
-        // MASTER SLIDER START
-        var slider = new MasterSlider();
-        slider.setup('masterslider', {
-            width: 1140, // slider standard width
-            height: 854, // slider standard height
-            space: 0,
-            speed: 50,
-            layout: "fullwidth",
-            centerControls: false,
-            loop: true,
-            autoplay: true
-            // more slider options goes here...
-            // check slider options section in documentation for more options.
-        });
-        // adds Arrows navigation control to the slider.
-        slider.control('arrows');
-
-        // CLIENTS CAROUSEL START
-        $('#client-carousel').owlCarousel({
-            items: 6,
-            loop: true,
-            margin: 30,
-            responsiveClass: true,
-            mouseDrag: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 2,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    responsiveClass: true
-                },
-                600: {
-                    items: 3,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    responsiveClass: true
-                },
-                1000: {
-                    items: 6,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    responsiveClass: true,
-                    mouseDrag: true
+            // CLIENTS CAROUSEL START
+            $('#client-carousel').owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 30,
+                responsiveClass: true,
+                mouseDrag: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true
+                    },
+                    1000: {
+                        items: 6,
+                        nav: true,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true,
+                        mouseDrag: true
+                    }
                 }
-            }
-        });
+            });
 
-        // TESTIMONIAL CAROUSELS START
-        $('#testimonial-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 30,
-            responsiveClass: true,
-            mouseDrag: true,
-            dots: false,
-            autoheight: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    responsiveClass: true,
-                    autoHeight: true
-                },
-                600: {
-                    items: 1,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    responsiveClass: true,
-                    autoHeight: true
-                },
-                1000: {
-                    items: 1,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    responsiveClass: true,
-                    mouseDrag: true,
-                    autoHeight: true
+            // TESTIMONIAL CAROUSELS START
+            $('#testimonial-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 30,
+                responsiveClass: true,
+                mouseDrag: true,
+                dots: false,
+                autoheight: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true,
+                        autoHeight: true
+                    },
+                    600: {
+                        items: 1,
+                        nav: true,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true,
+                        autoHeight: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true,
+                        loop: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true,
+                        mouseDrag: true,
+                        autoHeight: true
+                    }
                 }
-            }
+            });
         });
-    });
-    /* ]]> */
-</script>
+        /* ]]> */
+    </script>
+@endif
 @stack('scripts') {{-- sayfa bazlı js eklemek için --}}
 </body>
 </html>

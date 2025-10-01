@@ -173,7 +173,7 @@
                         <div class="service-media">
                             <img src="{{asset('img/pics/img01.jpg')}}" alt="Trucking"/>
 
-                            <a href="overland-transportation.html" class="read-more02">
+                            <a href="overland-transportation.html" class="read-more02">1
                                     <span>
                                         Read more
                                         <i class="fa fa-chevron-right"></i>
