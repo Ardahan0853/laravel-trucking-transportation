@@ -47,7 +47,7 @@
                                     <li><a class="nav-link {{request()->is('about') ? 'active' : ''}}" href="{{route('about.index')}}">{{ __('nav_about') }}</a></li>
                                     <li class="dropdown menu-item">
                                         <a href="services.html" data-toggle="dropdown"
-                                           class="dropdown-toggle">{{ __('nav_services') }}</a>
+                                           class="dropdown-toggle nav-link {{request()->is('industries/*') ? 'active' : ''}}">{{ __('nav_services') }}</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="{{route('industries.logistic.index')}}">{{ __('nav_services_1') }}</a></li>
                                             <li><a href="{{route('industries.construction.index')}}">{{ __('nav_services_2') }}</a></li>
@@ -57,7 +57,7 @@
                                             <li><a href="{{route('industries.passenger-transport.index')}}">{{ __('nav_services_6') }}</a></li>
                                         </ul><!-- .dropdown-menu end -->
                                     </li><!-- .dropdown end -->
-                                    <li><a href="contact.html">{{ __('nav_contact') }}</a></li>
+                                    <li><a href="{{route('contact.index')}}">{{ __('nav_contact') }}</a></li>
 
                                     <!-- LANGUAGE OPTIONS -->
                                     <div class="language-options">

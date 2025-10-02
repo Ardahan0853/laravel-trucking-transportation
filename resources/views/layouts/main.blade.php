@@ -53,6 +53,8 @@
 <script src="{{asset('js/jquery.matchHeight-min.js')}}"></script><!-- for columns with background image -->
 <script src="{{asset('js/jquery.dlmenu.min.js')}}"></script><!-- for responsive menu -->
 <script src="{{asset('js/include.js')}}"></script><!-- custom js functions -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> <!-- google maps -->
+<script src="js/jquery.ui.map.full.min.js"></script><!-- google maps -->
 <script>
     /* <![CDATA[ */
     $(document).ready(function () {

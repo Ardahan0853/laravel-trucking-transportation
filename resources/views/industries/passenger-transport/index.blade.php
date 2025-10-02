@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>{{ __('services2_title') }}</h1>
+                    <h1>{{ __('services6_title') }}</h1>
                 </div><!-- .col-md-12 end -->
             </div><!-- .row end -->
         </div><!-- .container end -->
@@ -22,31 +22,29 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="custom-heading">
-                        <h2>{{ __('services2_section_title') }}</h2>
+                        <h2>{{ __('services6_section_title') }}</h2>
                     </div><!-- .custom-heading end -->
-                    <p>{{ __('services2_section_text') }}</p>
-                    <p>{{ __('services2_section_text2') }}</p>
+                    <p>{{ __('services6_section_text') }}</p>
+                    <p>{{ __('services6_section_text2') }}</p>
 
                     <ul class="fa-ul">
                         <li>
                             <i class="fa fa-li fa-long-arrow-right"></i>
-                            <p>{{ __('service2_list_item') }}</p>
+                            <p>{{ __('service6_list_item') }}</p>
                         </li>
-
                         <li>
                             <i class="fa fa-li fa-long-arrow-right"></i>
-                            <p>{{ __('service2_list_item_2') }}</p>
+                            <p>{{ __('service6_list_item_2') }}</p>
                         </li>
-
                         <li>
                             <i class="fa fa-li fa-long-arrow-right"></i>
-                            <p>{{ __('service2_list_item_3') }}</p>
+                            <p>{{ __('service6_list_item_3') }}</p>
                         </li>
                     </ul><!-- .fa-ul end -->
                 </div><!-- .col-md-8 end -->
 
                 <div class="col-md-4">
-                    <img src="{{asset('img/pics/construction-machinery-manufacturers-desktop.webp')}}" alt="trucking"/>
+                    <img src="{{asset('img/pics/bus-passenger-transport-desktop.webp')}}" alt="{{ __('trucking') }}"/>
                 </div><!-- .col-md-4 end -->
             </div><!-- .row end -->
         </div><!-- .container end -->
@@ -58,15 +56,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-full-img">
-                    <img src="{{asset('img/pics/fleet-solutions-for-construction.webp')}}" alt="trucking"/>
+                    <img src="{{asset('img/pics/DRIVER-BEHAVIOUR-5.webp')}}" alt="{{ __('trucking') }}"/>
                 </div><!-- .col-md-6 end -->
-
                 <div class="col-md-6">
                     <div class="custom-heading">
-                        <h2>{{ __('services2_section2_title') }}</h2>
+                        <h2>{{ __('services6_section2_title') }}</h2>
                     </div><!-- .custom-heading end -->
-                    <p class="text-big">{{ __('services2_section2_subtitle') }}</p>
-                    <p>{{ __('services2_section2_text') }}</p>
+                    <p class="text-big">{{ __('services6_section2_subtitle') }}</p>
+                    <p>{{ __('services6_section2_text') }}</p>
                 </div><!-- .col-md-6.custom-col-padding end -->
             </div><!-- .row end -->
         </div><!-- .container end -->
@@ -79,7 +76,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="custom-heading">
-                        <h2>{{ __('services2_section3_title') }}</h2>
+                        <h2>{{ __('services6_section3_title') }}</h2>
                     </div><!-- .custom-heading end -->
 
                     <ul class="fa-ul large-icons">
@@ -88,45 +85,42 @@
                                 <i class="fa fa-check-circle"></i>
                             </div>
                             <div class="li-content">
-                                <h3>{{ __('services2_section3_subtitle') }}</h3>
-                                <p>{{ __('services2_section3_text') }}</p>
+                                <h3>{{ __('services6_section3_subtitle') }}</h3>
+                                <p>{{ __('services6_section3_text') }}</p>
                             </div><!-- .li-content end -->
                         </li>
-
                         <li>
                             <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
                                 <i class="fa fa-check-circle"></i>
                             </div>
                             <div class="li-content">
-                                <h3>{{ __('services2_section3_subtitle2') }}</h3>
-                                <p>{{ __('services2_section3_text2') }}</p>
+                                <h3>{{ __('services6_section3_subtitle2') }}</h3>
+                                <p>{{ __('services6_section3_text2') }}</p>
                             </div><!-- .li-content end -->
                         </li>
-
                         <li>
                             <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
                                 <i class="fa fa-check-circle"></i>
                             </div>
                             <div class="li-content">
-                                <h3>{{ __('services2_section3_subtitle3') }}</h3>
-                                <p>{{ __('services2_section3_text3') }}</p>
+                                <h3>{{ __('services6_section3_subtitle3') }}</h3>
+                                <p>{{ __('services6_section3_text3') }}</p>
                             </div><!-- .li-content end -->
                         </li>
-
                         <li>
                             <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
                                 <i class="fa fa-check-circle"></i>
                             </div>
                             <div class="li-content">
-                                <h3>{{ __('services2_section4_subtitle4') }}</h3>
-                                <p>{{ __('services2_section4_text4') }}</p>
+                                <h3>{{ __('services6_section3_subtitle4') }}</h3>
+                                <p>{{ __('services6_section3_text4') }}</p>
                             </div><!-- .li-content end -->
                         </li>
                     </ul><!-- .fa-ul .fa-ul-large end -->
                 </div><!-- .col-md-5 end -->
 
                 <div class="col-md-7 triggerAnimation animated" data-animate="fadeInRight">
-                    <img src="{{asset('img/pics/fleet-camera-footage-library-desktop.webp')}}" alt="trucking"/>
+                    <img src="{{asset('img/pics/mapon-devices-desktop.webp')}}" alt="{{ __('trucking') }}"/>
                 </div><!-- .col-md-7 end -->
             </div><!-- .row end -->
         </div><!-- .container end -->
@@ -138,11 +132,8 @@
         <div class="container">
             <div class="row">
                 <div class="video-wrapper">
-                    <iframe
-                        src="{{asset('https://www.youtube.com/embed/S4qSyT3OudQ')}}"
-                        title="YouTube video"
-                        allowfullscreen>
-                    </iframe>
+                    <iframe src="{{asset('https://www.youtube.com/embed/eUEuWGYsXMc')}}" title="{{ __('YouTube video') }}"
+                            allowfullscreen></iframe>
                 </div>
             </div><!-- .row end -->
         </div><!-- .container end -->

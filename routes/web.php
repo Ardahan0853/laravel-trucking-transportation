@@ -12,6 +12,7 @@ use App\Http\Controllers\CompanyEventsController;
 use App\Http\Controllers\CompanyHistoryController;
 use App\Http\Controllers\ConstructionController;
 use App\Http\Controllers\ConsultingServicesController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ContactLocationController;
 use App\Http\Controllers\ContactSimpleController;
 use App\Http\Controllers\ContractLogisticsController;
@@ -141,4 +142,5 @@ Route::get('location', [LocationController::class, 'index'])->name('location.ind
 
 // Contact Routes
 Route::get('contact-simple', [ContactSimpleController::class, 'index'])->name('contact-simple.index');
-Route::post('contact-simple', [ContactSimpleController::class, 'post'])->name('contact-simple.post');
+Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('contact', [ContactController::class, 'post'])->name('contact-simple.post');
