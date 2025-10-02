@@ -57,7 +57,7 @@
                                             <li><a href="{{route('industries.passenger-transport.index')}}">{{ __('nav_services_6') }}</a></li>
                                         </ul><!-- .dropdown-menu end -->
                                     </li><!-- .dropdown end -->
-                                    <li><a href="{{route('contact.index')}}">{{ __('nav_contact') }}</a></li>
+                                    <li><a href="{{route('contact.index')}}" class="nav-link {{request()->is('contact') ? 'active' : ''}}">{{ __('nav_contact') }}</a></li>
 
                                     <!-- LANGUAGE OPTIONS -->
                                     <div class="language-options">
