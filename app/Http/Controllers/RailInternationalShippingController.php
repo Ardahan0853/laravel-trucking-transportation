@@ -8,6 +8,6 @@ class RailInternationalShippingController extends Controller
 {
     public function index()
     {
-        return view('logistic.rail-international-shipping.index');
+        return view('services.logistics.rail-international-shipping.index');
     }
 }

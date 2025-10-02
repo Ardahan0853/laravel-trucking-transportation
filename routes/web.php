@@ -19,6 +19,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LargeProjectsController;
 use App\Http\Controllers\LogisticController;
 use App\Http\Controllers\LogisticsController;
+use App\Http\Controllers\NewsListController;
+use App\Http\Controllers\NewsMasonryController;
+use App\Http\Controllers\NewsSingleController;
+use App\Http\Controllers\NewsStandardController;
 use App\Http\Controllers\OceanFreightController;
 use App\Http\Controllers\OverlandTransportationController;
 use App\Http\Controllers\PackagingOptionsController;
@@ -92,5 +96,13 @@ Route::prefix('services')->name('services.')->group(function () {
     });
 });
 
-// SERVICES → LOGISTICS dropdown
+// NEWS
+
+// News routes
+
+Route::get('news-list', [NewsListController::class, 'index'])->name('news-list.index');
+Route::get('news-masonry', [NewsMasonryController::class, 'index'])->name('news-masonry.index');
+Route::get('news-standard', [NewsStandardController::class, 'index'])->name('news-standard.index');
+Route::get('news-single', [NewsSingleController::class, 'index'])->name('news-single.index');
+
 

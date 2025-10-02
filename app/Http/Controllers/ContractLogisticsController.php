@@ -8,6 +8,6 @@ class ContractLogisticsController extends Controller
 {
     public function index()
     {
-        return view('logistic.contract-logistics.index');
+        return view('services.logistics.contract-logistics.index');
     }
 }

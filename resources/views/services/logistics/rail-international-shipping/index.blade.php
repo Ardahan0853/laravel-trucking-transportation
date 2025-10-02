@@ -4,11 +4,11 @@
 
 @section('content')
     <!-- .page-title start -->
-    <div class="page-title-style01 page-title-negative-top pt-bkg05">
+    <div class="page-title-style01 page-title-negative-top pt-bkg14">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Services - Air freight</h1>
+                    <h1>Services - Rail international shipping</h1>
 
                     <div class="breadcrumb-container">
                         <ul class="breadcrumb clearfix">
@@ -21,11 +21,7 @@
                             </li>
 
                             <li>
-                                <a href="services02.html">Logistics</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Air freight</a>
+                                <a href="#">Rail international shipping</a>
                             </li>
                         </ul><!-- .breadcrumb end -->
                     </div><!-- .breadcrumb-container end -->
@@ -51,10 +47,10 @@
                                 </li>
 
                                 <li class="menu-item">
-                                    <a href="overland-transportation.html">Overland transportation</a>
+                                    <a href="#">Overland transportation</a>
                                 </li>
 
-                                <li class="menu-item current-menu-item">
+                                <li class="menu-item">
                                     <a href="air-freight.html">Air freight</a>
                                 </li>
 
@@ -70,7 +66,7 @@
                                     <a href="contract-logistics.html">Contract logistics</a>
                                 </li>
 
-                                <li class="menu-item">
+                                <li class="menu-item current-menu-item">
                                     <a href="rail-transportation.html">Rail transportation</a>
                                 </li>
 
@@ -141,12 +137,12 @@
                 </aside><!-- .aside.aside-left end -->
 
                 <div class="col-md-9">
-                    <img src="{{asset('img/pics/img28.jpg')}}" alt=""/>
+                    <img src="{{asset('img/pics/img39.jpg')}}" alt=""/>
 
                     <br/>
 
                     <div class="custom-heading">
-                        <h2>air freight</h2>
+                        <h2>rail international shipping</h2>
                     </div>
 
                     <p>
@@ -163,8 +159,8 @@
                         untrammelled and when nothing prevents our being
                         able to do what we like best, every pleasure is to
                         be welcomed and every pain avoided. But in certain
-                        circumstances and owing to the claims of duty or
-                        the obligations of business it will frequently occur
+                        circumstances and owing to the claims of duty or the
+                        obligations of business it will frequently occur
                         that pleasures have to be repudiated and annoyances
                         accepted. The wise man therefore always holds in
                         these matters to this principle of selection: he
@@ -172,73 +168,70 @@
                         or else he endures pains to avoid worse pains.
                     </p>
 
-                    <br/><br/>
-
+                    <br/>
 
                     <div class="row">
-                        <div class="col-md-6 clearfix">
-                            <h3>Our locations</h3>
+                        <div class="col-md-5">
+                            <img src="{{asset('img/pics/img38.jpg')}}" alt=""/>
+                        </div><!-- .col-md-5 end -->
 
-                            <img src="{{asset('img/pics/locations.jpg')}}" alt="locations illustration"/>
-
-                            <br/>
-
-                            <p>
-                                Trucking Co. covers over 150 locations all
-                                over the globe plus numerous logistic
-                                partner companies from different areas of
-                                supply chain.
-                            </p>
-
-                            <a href="locations.html" class="read-more">
-                                    <span>
-                                        View all locations
-                                        <i class="fa fa-chevron-right"></i>
-                                    </span>
-                            </a>
-                        </div><!-- .col-md-6 end -->
-
-                        <div class="col-md-6">
-                            <h3>Your benefits</h3>
-
-                            <p>
-                                A wonderful serenity has taken possession
-                                of my entire soul, like these sweet mornings
-                                of spring which I enjoy with my whole heart.
-                            </p>
-
-                            <ul class="fa-ul">
+                        <div class="col-md-7">
+                            <ul class="fa-ul large-icons">
                                 <li>
-                                    <i class="fa fa-li fa-long-arrow-right"></i>
-                                    Providing high quality transportation services to all of our clients
+                                    <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+
+                                    <div class="li-content">
+                                        <h3>Fast Worldwide delivery</h3>
+
+                                        <p>
+                                            Quick brown dogs jump over the lazy fox.
+                                            The jay, pig, fox, zebra, and my wolves
+                                            quack! Blowzy red vixens fight for a
+                                            quick jump. Joaquin Phoenix was gazed
+                                            by MTV for luck.
+                                        </p>
+                                    </div><!-- .li-content end -->
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-li fa-long-arrow-right"></i>
-                                    Invest in our employees to provide better service and company growth
+                                    <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+
+                                    <div class="li-content">
+                                        <h3>End-to-end solution available</h3>
+
+                                        <p>
+                                            Quick brown dogs jump over the lazy fox.
+                                            The jay, pig, fox, zebra, and my wolves
+                                            quack! Blowzy red vixens fight for a
+                                            quick jump. Joaquin Phoenix was gazed
+                                            by MTV for luck.
+                                        </p>
+                                    </div><!-- .li-content end -->
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-li fa-long-arrow-right"></i>
-                                    Worry about enviroment according to latest industry standards
-                                </li>
+                                    <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
 
-                                <li>
-                                    <i class="fa fa-li fa-long-arrow-right"></i>
-                                    Safety as top priority in assuring safe work procedures
-                                </li>
+                                    <div class="li-content">
+                                        <h3>Safety & Compliance</h3>
 
-                                <li>
-                                    <i class="fa fa-li fa-long-arrow-right"></i>
-                                    Investing in technology to provide fast, acurate and cost-effective service
+                                        <p>
+                                            Quick brown dogs jump over the lazy fox.
+                                            The jay, pig, fox, zebra, and my wolves
+                                            quack! Blowzy red vixens fight for a
+                                            quick jump. Joaquin Phoenix was gazed
+                                            by MTV for luck.
+                                        </p>
+                                    </div><!-- .li-content end -->
                                 </li>
-
-                                <li>
-                                    <i class="fa fa-li fa-long-arrow-right"></i>
-                                    Living up to highest industry standards
-                                </li>
-                            </ul><!-- .fa-ul end -->
-                        </div><!-- .col-md-6 end -->
+                            </ul><!-- .fa-ul .fa-ul-large end -->
+                        </div><!-- .col-md-7 end -->
                     </div><!-- .row end -->
 
                     <div class="custom-heading">

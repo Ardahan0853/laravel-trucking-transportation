@@ -97,7 +97,7 @@
                                 <h3>brochure download</h3>
                             </div>
 
-                            <img src="img/pics/brochure02.jpg" alt="Trucking brochure"/>
+                            <img src="{{asset('img/pics/brochure02.jpg')}}" alt="Trucking brochure"/>
                             <br/>
 
                             <a href="trucking_brochure.pdf" target="_blank" class="download-link">
@@ -121,7 +121,7 @@
                                 <h3>contact us</h3>
                             </div>
 
-                            <img src="img/pics/locations.jpg" alt="contact us"/>
+                            <img src="{{asset('img/pics/locations.jpg')}}" alt="contact us"/>
 
                             <br/>
 
@@ -182,7 +182,7 @@
 
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="img/pics/img31.jpg" alt=""/>
+                            <img src="{{asset('img/pics/img31.jpg')}}" alt=""/>
                         </div><!-- .col-md-5 end -->
 
                         <div class="col-md-7">
@@ -238,7 +238,7 @@
                         </div><!-- .col-md-8 end -->
 
                         <div class="col-md-4">
-                            <img src="img/pics/img29.jpg" alt=""/>
+                            <img src="{{asset('img/pics/img29.jpg')}}" alt=""/>
                         </div><!-- .col-md-4 end -->
                     </div><!-- .row end -->
 
@@ -251,7 +251,7 @@
                             <ul class="service-list-big-icons">
                                 <li>
                                     <div class="icon-container">
-                                        <img src="img/svg/pi-cargo-retail.svg" alt="retail svg icon"/>
+                                        <img src="{{asset('img/svg/pi-cargo-retail.svg')}}" alt="retail svg icon"/>
                                     </div>
 
                                     <h4>Textile Logistics</h4>
@@ -259,7 +259,7 @@
 
                                 <li>
                                     <div class="icon-container">
-                                        <img src="img/svg/pi-food-beverage.svg" alt="food and beverage svg icon"/>
+                                        <img src="{{asset('img/svg/pi-food-beverage.svg')}}" alt="food and beverage svg icon"/>
                                     </div>
 
                                     <h4>Retail Logistics</h4>
@@ -267,7 +267,7 @@
 
                                 <li>
                                     <div class="icon-container">
-                                        <img src="img/svg/pi-mark-energy.svg" alt="retail svg icon"/>
+                                        <img src="{{asset('img/svg/pi-mark-energy.svg')}}" alt="retail svg icon"/>
                                     </div>
 
                                     <h4>Oil & Gas Logistics</h4>
