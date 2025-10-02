@@ -17,8 +17,11 @@ use App\Http\Controllers\DriverApplicationController;
 use App\Http\Controllers\FullscreenMinimalController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LargeProjectsController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\LogisticController;
 use App\Http\Controllers\LogisticsController;
+use App\Http\Controllers\MediaGalleryFullController;
+use App\Http\Controllers\MediaGalleryGridController;
 use App\Http\Controllers\NewsListController;
 use App\Http\Controllers\NewsMasonryController;
 use App\Http\Controllers\NewsSingleController;
@@ -99,10 +102,14 @@ Route::prefix('services')->name('services.')->group(function () {
 // NEWS
 
 // News routes
-
 Route::get('news-list', [NewsListController::class, 'index'])->name('news-list.index');
 Route::get('news-masonry', [NewsMasonryController::class, 'index'])->name('news-masonry.index');
 Route::get('news-standard', [NewsStandardController::class, 'index'])->name('news-standard.index');
 Route::get('news-single', [NewsSingleController::class, 'index'])->name('news-single.index');
 
+// Media routes
+Route::get('media-gallery-full', [MediaGalleryFullController::class, 'index'])->name('media-gallery-full.index');
+Route::get('media-gallery-grid', [MediaGalleryGridController::class, 'index'])->name('media-gallery-grid.index');
 
+// Location Route
+Route::get('location', [LocationController::class, 'index'])->name('location.index');

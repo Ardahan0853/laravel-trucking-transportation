@@ -60,6 +60,8 @@
 <script src="{{asset('js/jquery.dlmenu.min.js')}}"></script><!-- for responsive menu -->
 <script src="{{asset('js/include.js')}}"></script><!-- custom js functions -->
 <script src="{{asset('js/jquery.nivo.slider.pack.js')}}"></script>
+<script src="{{asset('js/jquery.ui.map.full.min.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> <!-- google maps -->
 
 @if(request()->is('trucking-services-slider*') ||
  request()->is('trucking-parallax-slider*') ||

@@ -4,26 +4,20 @@
 
 @section('content')
     <!-- .page-title start -->
-    <div class="page-title-style01 page-title-negative-top pt-bkg10">
+    <div class="page-title-style01 page-title-negative-top pt-bkg09">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Services - Packaging options</h1>
+                    <h1>Trucking - News</h1>
 
                     <div class="breadcrumb-container">
                         <ul class="breadcrumb clearfix">
                             <li>You are here:</li>
-
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="#">News</a>
                             </li>
-
                             <li>
-                                <a href="services02.html">Services</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Packaging options</a>
+                                <a href="#">News masonry</a>
                             </li>
                         </ul><!-- .breadcrumb end -->
                     </div><!-- .breadcrumb-container end -->
@@ -32,214 +26,367 @@
         </div><!-- .container end -->
     </div><!-- .page-title-style01.page-title-negative-top end -->
 
-
-    <div class="page-content">
+    <div class="page-content custom-bkg bkg-grey">
         <div class="container">
             <div class="row">
-                <aside class="col-md-3 aside aside-left">
-                    <ul class="aside-widgets">
-                        <li class="widget widget_nav_menu clearfix">
-                            <div class="title">
-                                <h3>services</h3>
+                <ul class="col-md-12 blog-posts isotope masonry">
+                    <li class="blog-post clearfix isotope-item">
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <p>
+                                    <i class="fa fa-calendar"></i>
+                                    may 15, 2015
+                                </p>
+                            </div><!-- .post-date end -->
+
+                            <div class="post-category">
+                                <a href="#">news</a>
                             </div>
+                        </div><!-- .post-info end -->
 
-                            <ul class="menu">
-                                <li class="menu-item">
-                                    <a href="services02.html">Logistics</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="overland-transportation.html">Overland transportation</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="air-freight.html">Air freight</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="ocean-freight.html">Ocean freight</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="large-projects.html">Project logistics</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="contract-logistics.html">Contract logistics</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="rail-transportation.html">Rail transportation</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="warehousing.html">Warehousing</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="supply-chain-management.html">Supply chain management</a>
-                                </li>
-
-                                <li class="menu-item current-menu-item">
-                                    <a href="packaging-options.html">Packaging options</a>
-                                </li>
-
-                                <li class="menu-item">
-                                    <a href="consulting-services.html">Consulting services</a>
-                                </li>
-                            </ul><!-- .menu end -->
-                        </li><!-- .widget.widget_nav_menu end -->
-
-                        <li class="widget widget-text">
-                            <div class="title">
-                                <h3>brochure download</h3>
-                            </div>
-
-                            <img src="{{asset('img/pics/brochure02.jpg')}}" alt="Trucking brochure"/>
-                            <br/>
-
-                            <a href="trucking_brochure.pdf" target="_blank" class="download-link">
-                                    <span>
-                                        <i class="fa fa-file-pdf-o"></i>
-                                        Annual brochure_EN.pdf
-                                    </span>
+                        <div class="post-body">
+                            <a href="news-single.html">
+                                <h3>Trucking - Company of the Year 2014</h3>
                             </a>
-
-                            <a href="trucking_brochure.pdf" target="_blank" class="download-link">
-                                    <span>
-                                        <i class="fa fa-file-pdf-o"></i>
-                                        Annual brochure_FR.pdf
-                                    </span>
-                            </a>
-                        </li><!-- .widget.widget-text end -->
-
-                        <!-- .widget.widget-text start -->
-                        <li class="widget widget-text">
-                            <div class="title">
-                                <h3>contact us</h3>
-                            </div>
-
-                            <img src="{{asset('img/pics/locations.jpg')}}" alt="contact us"/>
-
-                            <br/>
 
                             <p>
-                                Let us know what can we do for you. Contact
-                                us today!
+                                Here is a place for a brief description what
+                                this post is about, just one or two short
+                                sentences...
                             </p>
+                        </div><!-- .post-body end -->
 
-                            <a href="contact-simple.html" class="read-more">
+                        <div class="post-media">
+                            <a href="news-single.html" class="post-img">
+                                <img src="{{asset('img/blog/masonry01.jpg')}}"
+                                     alt="Trucking Transportation and Logistics HTML template"/>
+                            </a>
+                        </div><!-- .post-media end -->
+
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="comments fa fa-comments-o"><a href="news-single.html">6</a></li>
+                                <li class="post-like fa fa-heart-o" data-url="http://www.envato.com"
+                                    data-text="This is an example of sharing your blog post"></li>
+                            </ul><!-- .post-meta end -->
+
+                            <a href="news-single.html" class="read-more">
                                     <span>
-                                        Contact us
-                                        <i class="fa fa-chevron-right"></i>
+                                        Read more
+                                        <i class="fa fa-external-link"></i>
                                     </span>
                             </a>
-                        </li><!-- .widget-text end -->
-                    </ul><!-- .aside-widgets end -->
-                </aside><!-- .aside.aside-left end -->
+                        </div><!-- .post-meta end -->
+                    </li><!-- .blog-post end -->
 
-                <div class="col-md-9">
-                    <img src="{{asset('img/pics/img35.jpg')}}" alt=""/>
+                    <li class="blog-post clearfix isotope-item">
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <p>
+                                    <i class="fa fa-calendar"></i>
+                                    may 12, 2015
+                                </p>
+                            </div><!-- .post-date end -->
 
-                    <br/>
+                            <div class="post-category">
+                                <a href="#">news</a>
+                            </div>
+                        </div><!-- .post-info end -->
 
-                    <div class="custom-heading">
-                        <h2>secure packaging</h2>
-                    </div><!-- .custom-heading end -->
+                        <div class="post-body">
+                            <a href="news-single.html">
+                                <h3>Trucking wins The Grean Truck Award</h3>
+                            </a>
 
-                    <p>
-                        On the other hand, we denounce with righteous
-                        indignation and dislike men who are so beguiled
-                        and demoralized by the charms of pleasure of the
-                        moment, so blinded by desire, that they cannot
-                        foresee the pain and trouble that are bound to
-                        ensue; and equal blame belongs to those who fail
-                        in their duty through weakness of will, which is
-                        the same as saying through shrinking from toil
-                        and pain.
-                    </p>
+                            <p>
+                                Here is a place for a brief description what
+                                this post is about, just one or two short
+                                sentences...
+                            </p>
+                        </div><!-- .post-body end -->
 
-                    <p>
-                        These cases are perfectly simple and easy to
-                        distinguish. In a free hour, when our power of
-                        choice is untrammelled and when nothing prevents
-                        our being able to do what we like best, every
-                        pleasure is to be welcomed and every pain avoided.
-                        But in certain circumstances and owing to the claims
-                        of duty or the obligations of business it will
-                        frequently occur that pleasures have to be
-                        repudiated and annoyances accepted. The wise man
-                        therefore always holds in these matters to this
-                        principle of selection: he rejects pleasures to
-                        secure other greater pleasures, or else he endures
-                        pains to avoid worse pains.
-                    </p>
+                        <div class="post-media">
+                            <a href="news-single.html" class="post-img">
+                                <img src="{{asset('img/blog/masonry03.jpg')}}"
+                                     alt="Trucking Transportation and Logistics HTML template"/>
+                            </a>
+                        </div><!-- .post-media end -->
 
-                    <br/>
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="comments fa fa-comments-o"><a href="news-single.html">6</a></li>
+                                <li class="post-like fa fa-heart-o" data-url="http://www.pixel-industry.com"
+                                    data-text="This is an example of sharing your blog post"></li>
+                            </ul><!-- .post-meta end -->
 
-                    <div class="custom-heading">
-                        <h3>packaging options</h3>
-                    </div><!-- .custom-heading end -->
+                            <a href="news-single.html" class="read-more">
+                                    <span>
+                                        Read more
+                                        <i class="fa fa-external-link"></i>
+                                    </span>
+                            </a>
+                        </div><!-- .post-meta end -->
+                    </li><!-- .blog-post end -->
 
-                    <p>
-                        On the other hand, we denounce with righteous
-                        indignation and dislike men who are so beguiled and
-                        demoralized by the charms of pleasure of the moment,
-                        so blinded by desire, that they cannot foresee the
-                        pain and trouble that are bound to ensue; and equal
-                        blame belongs to those who fail in their duty
-                        through weakness of will, which is the same as
-                        saying through shrinking from toil and pain.
-                    </p>
+                    <li class="blog-post clearfix isotope-item">
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <p>
+                                    <i class="fa fa-calendar"></i>
+                                    may 09, 2015
+                                </p>
+                            </div><!-- .post-date end -->
 
-                    <br/>
+                            <div class="post-category">
+                                <a href="#">conventions</a>
+                            </div>
+                        </div><!-- .post-info end -->
 
-                    <img src="{{asset('img/pics/packaging.jpg')}}" alt=""/>
+                        <div class="post-body">
+                            <a href="news-single.html">
+                                <h3>Trucking wins The Grean Truck Award</h3>
+                            </a>
 
-                    <br/><br/>
+                            <p>
+                                Here is a place for a brief description what
+                                this post is about, just one or two short
+                                sentences...
+                            </p>
+                        </div><!-- .post-body end -->
 
-                    <div class="table-responsive">
-                        <table class="table">
-                            <caption>packaging options table</caption>
+                        <div class="post-media">
+                            <div class="nivo-wrapper">
+                                <div id="slider-1" class="nivoSlider">
+                                    <img src="{{asset('img/blog/masonry04.jpg')}}" alt="image 1"
+                                         title="#slider-caption-1"/>
+                                    <img src="{{asset('img/blog/masonry05.jpg')}}" alt="image"
+                                         title="#slider-caption-2"/>
+                                    <img src="{{asset('img/blog/masonry06.jpg')}}" alt="image"
+                                         title="#slider-caption-3"/>
+                                </div><!-- .nivoSlider end -->
 
-                            <thead>
-                            <tr>
-                                <th>package size</th>
-                                <th>small</th>
-                                <th>medium</th>
-                                <th>large</th>
-                            </tr>
-                            </thead>
+                                <!-- .captions start -->
+                                <div id="slider-caption-1" class="nivo-caption">
+                                    <h3>Delivery</h3>
+                                </div>
 
-                            <tbody>
-                            <tr>
-                                <td>Package dimensions</td>
-                                <td>120 x 150 x 178</td>
-                                <td>120 x 150 x 178</td>
-                                <td>120 x 150 x 178</td>
-                            </tr>
+                                <div id="slider-caption-2" class="nivo-caption">
+                                    <h3>Warehousing</h3>
+                                </div>
 
-                            <tr>
-                                <td>Weight</td>
-                                <td>35 kg</td>
-                                <td>45kg</td>
-                                <td>65kg</td>
-                            </tr>
+                                <div id="slider-caption-3" class="nivo-caption">
+                                    <h3>Supply Chain Management</h3>
+                                </div>
+                            </div><!-- .nivo-wrapper end -->
+                        </div><!-- .post-media end -->
 
-                            <tr>
-                                <td>Capacity</td>
-                                <td>approx 158 units of textile</td>
-                                <td>approx 258 units of textile</td>
-                                <td>approx 258 units of textile</td>
-                            </tr>
-                            </tbody>
-                        </table><!-- .table end -->
-                    </div><!-- .table-responsive end -->
-                </div><!-- .col-md-9 end -->
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="comments fa fa-comments-o"><a href="news-single.html">6</a></li>
+                                <li class="post-like fa fa-heart-o"
+                                    data-url="http://themeforest.net/user/pixel-industry"
+                                    data-text="This is an example of sharing your blog post"></li>
+                            </ul><!-- .post-meta end -->
+
+                            <a href="news-single.html" class="read-more">
+                                    <span>
+                                        Read more
+                                        <i class="fa fa-external-link"></i>
+                                    </span>
+                            </a>
+                        </div><!-- .post-meta end -->
+                    </li><!-- .blog-post end -->
+
+                    <li class="blog-post clearfix isotope-item">
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <p>
+                                    <i class="fa fa-calendar"></i>
+                                    may 07, 2015
+                                </p>
+                            </div><!-- .post-date end -->
+
+                            <div class="post-category">
+                                <a href="#">news</a>
+                            </div>
+                        </div><!-- .post-info end -->
+
+                        <div class="post-body">
+                            <a href="news-single.html">
+                                <h3>New vehicles in the fleet - see our new Scania trucks</h3>
+                            </a>
+
+                            <p>
+                                Here is a place for a brief description what
+                                this post is about, just one or two short
+                                sentences...
+                            </p>
+                        </div><!-- .post-body end -->
+
+                        <div class="post-media">
+                            <a href="news-single.html" class="post-img">
+                                <img src="{{asset('img/blog/masonry07.jpg')}}"
+                                     alt="Trucking Transportation and Logistics HTML template"/>
+                            </a>
+                        </div><!-- .post-media end -->
+
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="comments fa fa-comments-o"><a href="news-single.html">6</a></li>
+                                <li class="post-like fa fa-heart-o"
+                                    data-url="http://themeforest.net/item/trucking-transportation-and-logistics-psd-template/11275857"
+                                    data-text="This is an example of sharing your blog post"></li>
+                            </ul><!-- .post-meta end -->
+
+                            <a href="news-single.html" class="read-more">
+                                    <span>
+                                        Read more
+                                        <i class="fa fa-external-link"></i>
+                                    </span>
+                            </a>
+                        </div><!-- .post-meta end -->
+                    </li><!-- .blog-post end -->
+
+                    <li class="blog-post clearfix isotope-item">
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <p>
+                                    <i class="fa fa-calendar"></i>
+                                    may 05, 2015
+                                </p>
+                            </div><!-- .post-date end -->
+
+                            <div class="post-category">
+                                <a href="#">press</a>
+                            </div>
+                        </div><!-- .post-info end -->
+
+                        <div class="post-body">
+                            <a href="news-single.html">
+                                <h3>Financial Report for last quarter of 2014</h3>
+                            </a>
+
+                            <p>
+                                Here is a place for a brief description what
+                                this post is about, just one or two short
+                                sentences...
+                            </p>
+                        </div><!-- .post-body end -->
+
+                        <div class="post-media">
+                            <a href="news-single.html" class="post-img">
+                                <img src="{{asset('img/blog/masonry08.jpg')}}"
+                                     alt="Trucking Transportation and Logistics HTML template"/>
+                            </a>
+                        </div><!-- .post-media end -->
+
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="comments fa fa-comments-o"><a href="news-single.html">6</a></li>
+                                <li class="post-like fa fa-heart-o"
+                                    data-url="http://themeforest.net/item/elvyre-retina-ready-wordpress-theme/7966500"
+                                    data-text="This is an example of sharing your blog post"></li>
+                            </ul><!-- .post-meta end -->
+
+                            <a href="news-single.html" class="read-more">
+                                    <span>
+                                        Read more
+                                        <i class="fa fa-external-link"></i>
+                                    </span>
+                            </a>
+                        </div><!-- .post-meta end -->
+                    </li><!-- .blog-post end -->
+
+                    <li class="blog-post clearfix isotope-item">
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <p>
+                                    <i class="fa fa-calendar"></i>
+                                    may 03, 2015
+                                </p>
+                            </div><!-- .post-date end -->
+
+                            <div class="post-category">
+                                <a href="#">conventions</a>
+                            </div>
+                        </div><!-- .post-info end -->
+
+                        <div class="post-body">
+                            <a href="news-single.html">
+                                <h3>New York Summit - Intelligent Supply Chain Management Solutions</h3>
+                            </a>
+
+                            <p>
+                                Here is a place for a brief description what
+                                this post is about, just one or two short
+                                sentences...
+                            </p>
+                        </div><!-- .post-body end -->
+
+                        <div class="post-media">
+                            <a href="news-single.html" class="post-img">
+                                <img src="{{asset('img/blog/masonry09.jpg')}}"
+                                     alt="Trucking Transportation and Logistics HTML template"/>
+                            </a>
+                        </div><!-- .post-media end -->
+
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="comments fa fa-comments-o"><a href="news-single.html">6</a></li>
+                                <li class="post-like fa fa-heart-o" data-url="http://www.pixel-industry.com"
+                                    data-text="This is an example of sharing your blog post"></li>
+                            </ul><!-- .post-meta end -->
+
+                            <a href="news-single.html" class="read-more">
+                                    <span>
+                                        Read more
+                                        <i class="fa fa-external-link"></i>
+                                    </span>
+                            </a>
+                        </div><!-- .post-meta end -->
+                    </li><!-- .blog-post end -->
+                </ul><!-- .col-md-12.blog-posts.post-list end -->
             </div><!-- .row end -->
         </div><!-- .container end -->
     </div><!-- .page-content end -->
 @endsection
 
 @push('scripts')
+    <script>
+        /* <![CDATA[ */
+        jQuery(document).ready(function ($) {
+            'use strict';
+
+            $('#slider-1').nivoSlider({
+                controlNav: false
+            });
+
+            //ISOTOPE START
+            (function () {
+                // cache container
+                var $blogmasonry = $('.blog-posts.masonry');
+                // initialize isotope
+                $blogmasonry.isotope({
+                    masonry: {
+                        columnWidth: 1,
+                        isResizable: true
+                    }
+                });
+            })(); // ISOTOPE END
+
+            //JQUERY SHARRE
+            $('.post-like').sharrre({
+                share: {
+                    facebook: true
+                },
+                enableHover: false,
+                enableTracking: true,
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('facebook');
+                }
+            });
+        });
+        /* ]]> */
+    </script>
 @endpush

@@ -121,22 +121,22 @@
                                     <li class="dropdown">
                                         <a href="" data-toggle="dropdown" class="dropdown-toggle">News</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="news-list.html">News list</a></li>
-                                            <li><a href="news-masonry.html">News masonry</a></li>
-                                            <li><a href="news-standard.html">News standard</a></li>
-                                            <li><a href="news-single.html">News single</a></li>
+                                            <li><a href="{{route('news-list.index')}}">News list</a></li>
+                                            <li><a href="{{route('news-masonry.index')}}">News masonry</a></li>
+                                            <li><a href="{{route('news-standard.index')}}">News standard</a></li>
+                                            <li><a href="{{route('news-single.index')}}">News single</a></li>
                                         </ul><!-- .dropdown-menu end -->
                                     </li><!-- .dropdown end -->
 
                                     <li class="dropdown">
                                         <a href="" data-toggle="dropdown" class="dropdown-toggle">Media</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="gallery01.html">Vehicle gallery full</a></li>
-                                            <li><a href="gallery02.html">Vehicle gallery grid</a></li>
+                                            <li><a href="{{route('media-gallery-full.index')}}">Vehicle gallery full</a></li>
+                                            <li><a href="{{route('media-gallery-grid.index')}}">Vehicle gallery grid</a></li>
                                         </ul><!-- .dropdown-menu end -->
                                     </li><!-- .dropdown end -->
 
-                                    <li><a href="locations.html">Locations</a></li>
+                                    <li><a href="{{route('location.index')}}">Locations</a></li>
 
                                     <li class="dropdown">
                                         <a href="" data-toggle="dropdown" class="dropdown-toggle">Contact</a>

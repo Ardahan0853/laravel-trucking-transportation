@@ -17,7 +17,7 @@
                                 <a href="#">News</a>
                             </li>
                             <li>
-                                <a href="#">News standard layout</a>
+                                <a href="#">News list</a>
                             </li>
                         </ul><!-- .breadcrumb end -->
                     </div><!-- .breadcrumb-container end -->
@@ -31,13 +31,6 @@
             <div class="row">
                 <ul class="col-md-9 blog-posts post-list">
                     <li class="blog-post clearfix">
-                        <div class="post-media">
-                            <a href="news-single.html" class="post-img">
-                                <img src="img/blog/post-img01.jpg"
-                                     alt="Trucking Transportation and Logistics HTML template"/>
-                            </a>
-                        </div><!-- .post-media end -->
-
                         <div class="post-date">
                             <p class="day">15</p>
                             <p class="month">may</p>
@@ -67,13 +60,6 @@
                     </li><!-- .blog-post end -->
 
                     <li class="blog-post clearfix">
-                        <div class="post-media">
-                            <a href="news-single.html" class="post-img">
-                                <img src="img/blog/post-img03.jpg"
-                                     alt="Trucking Transportation and Logistics HTML template"/>
-                            </a>
-                        </div><!-- .post-media end -->
-
                         <div class="post-date">
                             <p class="day">12</p>
                             <p class="month">may</p>
@@ -103,29 +89,6 @@
                     </li><!-- .blog-post end -->
 
                     <li class="blog-post clearfix">
-                        <div class="post-media">
-                            <div class="nivo-wrapper">
-                                <div id="slider-1" class="nivoSlider">
-                                    <img src="img/blog/post-img04.jpg" alt="image 1" title="#slider-caption-1"/>
-                                    <img src="img/blog/post-img05.jpg" alt="image" title="#slider-caption-2"/>
-                                    <img src="img/blog/post-img06.jpg" alt="image" title="#slider-caption-3"/>
-                                </div><!-- .nivoSlider end -->
-
-                                <!-- .captions start -->
-                                <div id="slider-caption-1" class="nivo-caption">
-                                    <h3>Delivery</h3>
-                                </div>
-
-                                <div id="slider-caption-2" class="nivo-caption">
-                                    <h3>Warehousing</h3>
-                                </div>
-
-                                <div id="slider-caption-3" class="nivo-caption">
-                                    <h3>Supply Chain Management</h3>
-                                </div>
-                            </div><!-- .nivo-wrapper end -->
-                        </div><!-- .post-media end -->
-
                         <div class="post-date">
                             <p class="day">09</p>
                             <p class="month">may</p>
@@ -155,13 +118,6 @@
                     </li><!-- .blog-post end -->
 
                     <li class="blog-post clearfix">
-                        <div class="post-media">
-                            <a href="news-single.html" class="post-img">
-                                <img src="img/blog/post-img07.jpg"
-                                     alt="Trucking Transportation and Logistics HTML template"/>
-                            </a>
-                        </div><!-- .post-media end -->
-
                         <div class="post-date">
                             <p class="day">07</p>
                             <p class="month">may</p>
@@ -191,13 +147,6 @@
                     </li><!-- .blog-post end -->
 
                     <li class="blog-post clearfix">
-                        <div class="post-media">
-                            <a href="news-single.html" class="post-img">
-                                <img src="img/blog/post-img08.jpg"
-                                     alt="Trucking Transportation and Logistics HTML template"/>
-                            </a>
-                        </div><!-- .post-media end -->
-
                         <div class="post-date">
                             <p class="day">05</p>
                             <p class="month">may</p>
@@ -227,13 +176,6 @@
                     </li><!-- .blog-post end -->
 
                     <li class="blog-post clearfix">
-                        <div class="post-media">
-                            <a href="news-single.html" class="post-img">
-                                <img src="img/blog/post-img09.jpg"
-                                     alt="Trucking Transportation and Logistics HTML template"/>
-                            </a>
-                        </div><!-- .post-media end -->
-
                         <div class="post-date">
                             <p class="day">03</p>
                             <p class="month">may</p>
@@ -354,7 +296,7 @@
                                 <h3>contact us</h3>
                             </div>
 
-                            <img src="img/pics/locations.jpg" alt="contact us"/>
+                            <img src="{{asset('img/pics/locations.jpg')}}" alt="contact us"/>
 
                             <p>
                                 Let us know what can we do for you. Contact
@@ -376,15 +318,4 @@
 @endsection
 
 @push('scripts')
-    <script>
-        /* <![CDATA[ */
-        jQuery(document).ready(function ($) {
-            'use strict';
-
-            $('#slider-1').nivoSlider({
-                controlNav: false
-            });
-        });
-        /* ]]> */
-    </script>
 @endpush
