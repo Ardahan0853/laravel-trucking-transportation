@@ -3,102 +3,96 @@
         <div class="container">
             <div class="row">
                 <ul class="col-md-3 col-sm-6 footer-widget-container clearfix">
-                    <!-- .widget.widget_text -->
-                    <!-- .widget-pages start -->
                     <li class="widget widget_pages">
                         <div class="title">
-                            <h3 id="footer-category-1">PRODUCTS</h3>
+                            <h3>{{ __('footer-category-1') }}</h3>
                         </div>
 
                         <ul>
-                            <li><a href="{{route('trucking-services.index')}}">Truckpost Platform</a></li>
-                            <li><a href="company-history.html">Truckpost Expert</a></li>
-                            <li><a href="events.html">Truckpost Driver App</a></li>
-                            <li><a href="supply-chain-management.html">Truckpost Manager App</a></li>
-                            <li><a href="warehousing.html">Truckpost App</a></li>
+                            <li><a href="{{route('trucking-services.index')}}">{{ __('Truckpost Platform') }}</a></li>
+                            <li><a href="company-history.html">{{ __('Truckpost Expert') }}</a></li>
+                            <li><a href="events.html">{{ __('Truckpost Driver App') }}</a></li>
+                            <li><a href="supply-chain-management.html">{{ __('Truckpost Manager App') }}</a></li>
+                            <li><a href="warehousing.html">{{ __('Truckpost App') }}</a></li>
                         </ul>
-                    </li><!-- .widget-pages end -->
-                </ul><!-- .col-md-3.footer-widget-container end -->
+                    </li>
+                </ul>
 
                 <ul class="col-md-3 col-sm-6 footer-widget-container">
-                    <!-- .widget-pages start -->
                     <li class="widget widget_pages">
                         <div class="title">
-                            <h3 id="footer-category-2">RESOURCES</h3>
+                            <h3>{{ __('footer-category-2') }}</h3>
                         </div>
 
                         <ul>
-                            <li><a href="overland-transportation.html">Supported Devices</a></li>
-                            <li><a href="air-freight.html">Blog</a></li>
-                            <li><a href="ocean-freight.html">Terms and Privacy</a></li>
-                            <li><a href="large-projects.html">FAQ</a></li>
-                            <li><a href="rail-transportation.html">Truckpost Status</a></li>
-                            <li><a href="contract-logistics.html">Truckpost Certification</a></li>
-                            <li><a href="packaging-options.html">How to Start</a></li>
+                            <li><a href="overland-transportation.html">{{ __('Supported Devices') }}</a></li>
+                            <li><a href="air-freight.html">{{ __('Blog') }}</a></li>
+                            <li><a href="ocean-freight.html">{{ __('Terms and Privacy') }}</a></li>
+                            <li><a href="large-projects.html">{{ __('FAQ') }}</a></li>
+                            <li><a href="rail-transportation.html">{{ __('Truckpost Status') }}</a></li>
+                            <li><a href="contract-logistics.html">{{ __('Truckpost Certification') }}</a></li>
+                            <li><a href="packaging-options.html">{{ __('How to Start') }}</a></li>
                         </ul>
-                    </li><!-- .widget-pages end -->
-                </ul><!-- .col-md-3.footer-widget-container end -->
+                    </li>
+                </ul>
 
                 <ul class="col-md-3 col-sm-6 footer-widget-container">
-                    <!-- .widget-pages start -->
                     <li class="widget widget_pages">
                         <div class="title">
-                            <h3 id="footer-category-3">About</h3>
+                            <h3>{{ __('footer-category-3') }}</h3>
                         </div>
 
                         <ul>
-                            <li><a href="overland-transportation.html">About Us</a></li>
-                            <li><a href="air-freight.html">White Label</a></li>
-                            <li><a href="ocean-freight.html">Vacancies</a></li>
-                            <li><a href="large-projects.html">Investors</a></li>
-                            <li><a href="rail-transportation.html">Contacts</a></li>
-                            <li><a href="contract-logistics.html">Press Releases</a></li>
+                            <li><a href="overland-transportation.html">{{ __('About Us') }}</a></li>
+                            <li><a href="air-freight.html">{{ __('White Label') }}</a></li>
+                            <li><a href="ocean-freight.html">{{ __('Vacancies') }}</a></li>
+                            <li><a href="large-projects.html">{{ __('Investors') }}</a></li>
+                            <li><a href="rail-transportation.html">{{ __('Contacts') }}</a></li>
+                            <li><a href="contract-logistics.html">{{ __('Press Releases') }}</a></li>
                         </ul>
-                    </li><!-- .widget-pages end -->
-                </ul><!-- .col-md-3.footer-widget-container end -->
+                    </li>
+                </ul>
 
                 <ul class="col-md-3 col-sm-6 footer-widget-container">
                     <li class="widget widget-text">
                         <div class="title">
-                            <h3 id="footer-category-4">contact us</h3>
+                            <h3>{{ __('footer-category-4') }}</h3>
                         </div>
 
                         <div class="title">
-                            <p id="footer_contact_subtitle">MON-FRI, 9AM - 5PM (EET)</h3>
+                            <p>{{ __('footer_contact_subtitle') }}</p>
                         </div>
 
-                        <span id="footer_phone" class="text-big">
-                                    +371 6727 1803
-                                </span>
+                        <span class="text-big">{{ __('footer_phone') }}</span>
                         <br/>
 
-                        <a href="mailto:">partnerships@mapon.com</a>
+                        <a href="mailto:">{{ __('partnership_email') }}</a>
                         <br/>
                         <ul class="footer-social-icons">
                             <li><a href="https://www.facebook.com/mapon.gpstracking" class="fa fa-facebook"></a></li>
                             <li><a href="https://www.linkedin.com/company/mapon" class="fa fa-linkedin"></a></li>
                             <li><a href="https://www.youtube.com/c/Mapon-fleet-management-platform"
                                    class="fa fa-youtube"></a></li>
-                        </ul><!-- .footer-social-icons end -->
-                    </li><!-- .widget.widget-text end -->
-                </ul><!-- .col-md-3.footer-widget-container end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </footer><!-- #footer end -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <div class="copyright-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>PART OF THE DRAUGIEM GROUP</p>
-                </div><!-- .col-md-6 end -->
+                    <p>{{ __('PART OF THE DRAUGIEM GROUP') }}</p>
+                </div>
 
                 <div class="col-md-6">
-                    <p class="align-right"><a href="https://www.mapon.com/en">© Truckpost 2025. All rights reserved</p>
-                </div><!-- .col-md-6 end -->
-            </div><!-- .row end -->
-        </div><!-- .container end -->
-    </div><!-- .copyright-container end -->
+                    <p class="align-right"><a href="https://www.mapon.com/en">{{ __('© Truckpost 2025. All rights reserved') }}</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <a href="#" class="scroll-up">Scroll</a>
-</div><!-- #footer-wrapper end -->
+    <a href="#" class="scroll-up">{{ __('Scroll') }}</a>
+</div>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutCompactController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutSidebarController;
 use App\Http\Controllers\AboutSimpleController;
 use App\Http\Controllers\AgricultureController;
@@ -18,6 +19,7 @@ use App\Http\Controllers\DeliveryController;
 use App\Http\Controllers\DriverApplicationController;
 use App\Http\Controllers\FullscreenMinimalController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IndustriesController;
 use App\Http\Controllers\LargeProjectsController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\LogisticController;
@@ -52,7 +54,15 @@ Route::get('/', function () {
     return view('home.index');
 });
 
+Route::get('/lang/{locale}', function ($locale) {
+    if (in_array($locale, ['tr', 'en', 'de'])) {
+        Session::put('locale', $locale);
+    }
+    return redirect()->back();
+})->name('setLocale');
+
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('about', [AboutController::class, 'index'])->name('about.index');
 Route::get('logistic', [LogisticController::class, 'index'])->name('logistic.index');
 Route::get('construction', [ConstructionController::class, 'index'])->name('construction.index');
 Route::get('delivery-management', [DeliveryController::class, 'index'])->name('delivery-management.index');
@@ -80,6 +90,19 @@ Route::get('company-events', [CompanyEventsController::class, 'index'])->name('c
 Route::get('company-clients', [CompanyClientsController::class, 'index'])->name('company-clients.index');
 Route::get('careers', [CareersController::class, 'index'])->name('careers.index');
 Route::get('driver-application', [DriverApplicationController::class, 'index'])->name('driver-application.index');
+
+// Industries Routes
+
+Route::prefix('industries')->name('industries.')
+    ->controller(IndustriesController::class)
+    ->group(function () {
+        Route::get('logistic', 'getLogistic')->name('logistic.index');
+        Route::get('construction', 'getConstruction')->name('construction.index');
+        Route::get('delivery-management', 'getDelivery')->name('delivery-management.index');
+        Route::get('agriculture', 'getAgriculture')->name('agriculture.index');
+        Route::get('waste-management', 'getWaste')->name('waste-management.index');
+        Route::get('passenger-transport', 'getPassenger')->name('passenger-transport.index');
+    });
 
 
 //Route::get('services-overview', [ServicesOverviewController::class, 'index'])->name('services-overview.index');
