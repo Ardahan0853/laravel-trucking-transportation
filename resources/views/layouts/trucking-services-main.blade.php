@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{asset('css/color-default.css')}}"/><!-- template main color -->
     <link rel="stylesheet" href="{{asset('css/retina.css')}}"/><!-- retina ready styles -->
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}"/><!-- responsive styles -->
+    <link rel="stylesheet" href="{{asset('css/nivo-slider.css')}}"/><!-- nivo slider style -->
 
     <!-- Google Web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>
@@ -32,7 +33,11 @@
 </head>
 <body style="position: relative;">
 {{-- header --}}
-@include('partials.trucking-services-header')
+@if(request()->is('simple-page-title*'))
+@else
+    @include('partials.trucking-services-header')
+@endif
+
 
 {{-- content --}}
 
@@ -54,8 +59,15 @@
 <script src="{{asset('js/jquery.matchHeight-min.js')}}"></script><!-- for columns with background image -->
 <script src="{{asset('js/jquery.dlmenu.min.js')}}"></script><!-- for responsive menu -->
 <script src="{{asset('js/include.js')}}"></script><!-- custom js functions -->
+<script src="{{asset('js/jquery.nivo.slider.pack.js')}}"></script>
 
-@if(request()->is('trucking-services-slider*') || request()->is('trucking-parallax-slider*') || request()->is('trucking-corporate*') || request()->is('trucking-simple-slider*') || request()->is('fullscreen-minimal*'))
+@if(request()->is('trucking-services-slider*') ||
+ request()->is('trucking-parallax-slider*') ||
+  request()->is('trucking-corporate*') ||
+   request()->is('trucking-simple-slider*') ||
+    request()->is('fullscreen-minimal*') ||
+     request()->is('company-history*') ||
+      request()->is('company-clients*') )
     <script></script>
 @else
     <script>

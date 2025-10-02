@@ -14,7 +14,7 @@
                             <div class="navbar-header">
                                 <div class="logo">
                                     <a href="{{route('home.index')}}">
-                                        <img src="img/logo.png"
+                                        <img src="{{asset('img/logo.png')}}"
                                              alt="Trucking Transportation and Logistics HTML Template"/>
                                     </a>
                                 </div><!-- .logo end -->
@@ -85,28 +85,39 @@
                                     <li class="dropdown">
                                         <a href="" data-toggle="dropdown" class="dropdown-toggle">Services</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="services01.html">Services overview</a></li>
+{{--                                            <li><a href="{{ route('services.overview') }}">Services overview</a></li>--}}
                                             <li class="dropdown dropdown-submenu">
                                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Logistics</a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="services02.html">Logistics</a></li>
-                                                    <li><a href="overland-transportation.html">Overland
+                                                    <li><a href="{{ route('services.logistics.index') }}">Logistics</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('services.logistics.overland-transportation.index') }}">Overland
                                                             transportation</a></li>
-                                                    <li><a href="air-freight.html">Air freight</a></li>
-                                                    <li><a href="ocean-freight.html">Ocean freight</a></li>
-                                                    <li><a href="large-projects.html">Large projects</a></li>
-                                                    <li><a href="rail-transportation.html">Rail international
-                                                            shipping</a></li>
-                                                    <li><a href="contract-logistics.html">Contract logistics</a></li>
+                                                    <li><a href="{{ route('services.logistics.air-freight.index') }}">Air
+                                                            freight</a></li>
+                                                    <li><a href="{{ route('services.logistics.ocean-freight.index') }}">Ocean
+                                                            freight</a></li>
+                                                    <li>
+                                                        <a href="{{ route('services.logistics.large-projects.index') }}">Large
+                                                            projects</a></li>
+                                                    <li>
+                                                        <a href="{{ route('services.logistics.rail-international-shipping.index') }}">Rail
+                                                            international shipping</a></li>
+                                                    <li>
+                                                        <a href="{{ route('services.logistics.contract-logistics.index') }}">Contract
+                                                            logistics</a></li>
                                                 </ul><!-- .dropdown-menu end -->
                                             </li><!-- .dropdown-submenu end -->
-                                            <li><a href="warehousing.html">Warehousing</a></li>
-                                            <li><a href="supply-chain-management.html">Supply chain management</a></li>
-                                            <li><a href="packaging-options.html">Packaging options</a></li>
-                                            <li><a href="consulting-services.html">Consulting services</a></li>
+                                            <li><a href="{{ route('services.warehousing.index') }}">Warehousing</a></li>
+                                            <li><a href="{{ route('services.supply-chain-management.index') }}">Supply
+                                                    chain management</a></li>
+                                            <li><a href="{{ route('services.packaging-options.index') }}">Packaging
+                                                    options</a></li>
+                                            <li><a href="{{ route('services.consulting-services.index') }}">Consulting
+                                                    services</a></li>
                                         </ul><!-- .dropdown-menu end -->
                                     </li><!-- .dropdown end -->
-
                                     <li class="dropdown">
                                         <a href="" data-toggle="dropdown" class="dropdown-toggle">News</a>
                                         <ul class="dropdown-menu">
