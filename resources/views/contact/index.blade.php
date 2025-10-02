@@ -289,7 +289,6 @@
 
             // CONTACT FORM AJAX SUBMIT START
             $('#contact_form').on('submit', function (e) {
-                console.log('arda')
                 e.preventDefault();
                 var inquiry = $('#contact-inquiry option:selected').text();
                 var name = $('#contact-name').val();
