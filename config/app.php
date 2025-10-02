@@ -84,6 +84,8 @@ return [
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
+    'contact_form' => ['recipient' => env('CONTACT_FORM_RECIPIENT')],
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key

@@ -8,6 +8,7 @@
           content="transportation, logistics, transportation template, logistics template, cargo, business">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}"/><!-- bootstrap grid -->
@@ -61,6 +62,7 @@
 <script src="{{asset('js/include.js')}}"></script><!-- custom js functions -->
 <script src="{{asset('js/jquery.nivo.slider.pack.js')}}"></script>
 <script src="{{asset('js/jquery.ui.map.full.min.js')}}"></script>
+<!-- Normally Developers use API key for Google Maps. Currently I have not provided with an API key so this is it for now.-->
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> <!-- google maps -->
 
 @if(request()->is('trucking-services-slider*') ||
@@ -69,7 +71,8 @@
    request()->is('trucking-simple-slider*') ||
     request()->is('fullscreen-minimal*') ||
      request()->is('company-history*') ||
-      request()->is('company-clients*') )
+      request()->is('company-clients*') ||
+       request()->is('contact-simple*'))
     <script></script>
 @else
     <script>

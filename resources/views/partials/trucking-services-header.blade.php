@@ -141,7 +141,7 @@
                                     <li class="dropdown">
                                         <a href="" data-toggle="dropdown" class="dropdown-toggle">Contact</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="contact-simple.html">Contact simple</a></li>
+                                            <li><a href="{{route('contact-simple.index')}}">Contact simple</a></li>
                                             <li><a href="contact-locations.html">Contact locations</a></li>
                                         </ul><!-- .dropdown-menu end -->
                                     </li><!-- .dropdown end -->

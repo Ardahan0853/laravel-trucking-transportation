@@ -11,6 +11,8 @@ use App\Http\Controllers\CompanyEventsController;
 use App\Http\Controllers\CompanyHistoryController;
 use App\Http\Controllers\ConstructionController;
 use App\Http\Controllers\ConsultingServicesController;
+use App\Http\Controllers\ContactLocationController;
+use App\Http\Controllers\ContactSimpleController;
 use App\Http\Controllers\ContractLogisticsController;
 use App\Http\Controllers\DeliveryController;
 use App\Http\Controllers\DriverApplicationController;
@@ -113,3 +115,7 @@ Route::get('media-gallery-grid', [MediaGalleryGridController::class, 'index'])->
 
 // Location Route
 Route::get('location', [LocationController::class, 'index'])->name('location.index');
+
+// Contact Routes
+Route::get('contact-simple', [ContactSimpleController::class, 'index'])->name('contact-simple.index');
+Route::post('contact-simple', [ContactSimpleController::class, 'post'])->name('contact-simple.post');
