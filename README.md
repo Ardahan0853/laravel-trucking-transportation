@@ -43,7 +43,7 @@ npm install && npm run build
 Create a .env file in the project root and paste the following configuration:
 APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=base64:5gTnbM44Zhuw/YM/xi8XyM6l8TGobbtSyk0ARIQROIU=
+APP_KEY="YOUR_KEY_HERE"
 APP_DEBUG=true
 APP_URL=http://localhost
 
@@ -66,7 +66,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel_trucking
 DB_USERNAME=root
-DB_PASSWORD=@Rdaarda1
+DB_PASSWORD="YOUR_DB_PASSWORD_HERE"
 
 SESSION_DRIVER=database
 SESSION_LIFETIME=120
