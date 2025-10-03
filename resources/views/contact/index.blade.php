@@ -32,7 +32,7 @@
 
                     <!-- .contact form start -->
                     <form class="wpcf7 clearfix" id="contact_form">
-                        <fieldset>
+                        {{-- <fieldset>
                             <label>
                                 <span class="required">*</span> {{ __('Your request:') }}
                             </label>
@@ -47,7 +47,7 @@
                                 <option
                                     value="{{ __('I have some other request') }}">{{ __('I have some other request') }}</option>
                             </select>
-                        </fieldset>
+                        </fieldset> --}}
 
                         <fieldset>
                             <label>
@@ -79,6 +79,10 @@
                             </label>
 
                             <textarea rows="8" class="wpcf7-textarea" id="contact-message"></textarea>
+                        </fieldset>
+
+                        <fieldset>
+                            {!! app('captcha')->display() !!}
                         </fieldset>
 
                         <input type="submit" class="wpcf7-submit" value="{{ __('SEND') }}"/>
@@ -214,6 +218,7 @@
 @endsection
 
 @push('scripts')
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <script>
         /* <![CDATA[ */
         jQuery(document).ready(function ($) {
@@ -290,11 +295,17 @@
             // CONTACT FORM AJAX SUBMIT START
             $('#contact_form').on('submit', function (e) {
                 e.preventDefault();
+
+                // Clear old errors
+                $('#contact_form .has-error').removeClass('has-error');
+                $('#contact_form .help-block').remove();
+
                 var inquiry = $('#contact-inquiry option:selected').text();
                 var name = $('#contact-name').val();
                 var lastname = $('#contact-last-name').val();
                 var email = $('#contact-email').val();
                 var contact_message = $('#contact-message').val();
+
                 var form_data = {
                     'inquiry': inquiry,
                     'name': name,
@@ -302,21 +313,43 @@
                     'email': email,
                     'message': contact_message
                 };
+
                 $.ajax({
                     type: 'POST',
                     url: "{{route('contact-simple.post')}}",
-                    data: ({
+                    data: {
                         'action': 'contact',
                         ...form_data,
                         '_token': '{{csrf_token()}}'
-                    })
+                    }
                 }).done(function (data) {
                     alert(data.message);
+                    $('#contact_form')[0].reset();
                 }).fail(function (xhr) {
-                    // Hata durumunda
-                    alert('Something went wrong, please try again later.');
+                    if (xhr.status === 422) {
+                        var errors = xhr.responseJSON.errors;
+                        $.each(errors, function (field, messages) {
+                            var input = $('#contact-' + field.replace('_','-'));
+                            if (input.length) {
+                                var group = input.closest('fieldset'); // acts as form-group here
+                                group.addClass('has-error');
+                                input.after('<span class="help-block">' + messages[0] + '</span>');
+                            }
+                        });
+                    } else {
+                        alert('Something went wrong, please try again later.');
+                    }
                 });
             });
+
+            // Remove error styling on input/change
+            $('#contact_form').on('input change', 'input, textarea, select', function () {
+                var group = $(this).closest('fieldset');
+                group.removeClass('has-error');
+                group.find('.help-block').remove();
+            });
+
+
         });
         /* ]]> */
     </script>
